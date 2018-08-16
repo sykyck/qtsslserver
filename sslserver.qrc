@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>replyserver.pem</file>
+        <file>replyserver.key</file>
+    </qresource>
+</RCC>
