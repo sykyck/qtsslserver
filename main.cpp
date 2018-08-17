@@ -1,4 +1,4 @@
-#include <QCoreApplication>
+#include <QApplication>
 #include <QMainWindow>
 #include <QObject>
 #include "qsslserver.h"
@@ -6,7 +6,7 @@
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication a(argc, argv);
+    QGuiApplication a(argc, argv);
     MainWindow window;
     return a.exec();
 }
