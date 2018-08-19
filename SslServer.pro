@@ -23,4 +23,15 @@ SOURCES += \
         qsslserver.cpp \
     mainwindow.cpp
 
+INCLUDEPATH += /opt/openssl/openssl-1.0.2h/include
+
+LIBS += /opt/openssl/openssl-1.0.2h/libcrypto.a
+LIBS += /opt/openssl/openssl-1.0.2h/libssl.a
+
 RESOURCES += sslserver.qrc
+
+copydata.commands = $(COPY_DIR) $$PWD/cert $$OUT_PWD
+first.depends = $(first) copydata
+export(first.depends)
+export(copydata.commands)
+QMAKE_EXTRA_TARGETS += first copydata

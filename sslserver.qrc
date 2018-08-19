@@ -1,6 +1,6 @@
 <RCC>
     <qresource prefix="/">
-        <file>replyserver.pem</file>
-        <file>replyserver.key</file>
+        <file>cert/replyserver.pem</file>
+        <file>cert/replyserver.key</file>
     </qresource>
 </RCC>
